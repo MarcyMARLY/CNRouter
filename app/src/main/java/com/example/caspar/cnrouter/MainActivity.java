@@ -178,10 +178,13 @@ public class MainActivity extends AppCompatActivity {
                 if (convertPosToIP(ch2).getIPaddress() == remoteConTable.get(i).getNetworkAddress()) {
                     tv1.setText(tv1.getText() + "There's a path: Next hop: " + convertIPtoRouter(remoteConTable.get(i).getNextHop()) + " Metrics: " + remoteConTable.get(i).getDistance() + "\n");
                     if(remoteConTable.get(i).getNextHop() == "171.128.0.0/26"){
+                        if(remoteConTable.get(i).getNetworkAddress()==remoteConTable.get(i).getNextHop()){
+                            findDirCon(convertIPToPos(remoteConTable.get(i).getNextHop()),convertIPToPos(remoteConTable.get(i).getNetworkAddress()));
+                        }
                         findRemCon(1,convertIPToPos(convertPosToIP(ch2).getIPaddress()));
                         //findDirCon(1,convertIPToPos(convertPosToIP(ch2).getIPaddress()));
                     }else{
-                        findDirCon(convertIPToPos(remoteConTable.get(i).getNextHop()),convertIPToPos(remoteConTable.get(i).getNextHop()));
+                        findDirCon(convertIPToPos(remoteConTable.get(i).getNextHop()),convertIPToPos(remoteConTable.get(i).getNetworkAddress()));
                     }
 
                 }
