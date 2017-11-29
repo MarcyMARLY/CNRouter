@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.caspar.cnrouter.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_x="10dp"
+        android:layout_y="0dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:textSize="12dp"/>
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/N1C1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="168dp"
+        android:layout_y="86dp"
+        app:srcCompat="@drawable/coding"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/router2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="254dp"
+        android:layout_y="155dp"
+        app:srcCompat="@drawable/router"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/N1C2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="171dp"
+        android:layout_y="220dp"
+        app:srcCompat="@drawable/coding"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/N2C1"
+        android:layout_width="41dp"
+        android:layout_height="30dp"
+        android:layout_x="5dp"
+
+
+        android:layout_y="155dp"
+        app:srcCompat="@drawable/coding"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/N3C1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="327dp"
+        android:layout_y="155dp"
+        app:srcCompat="@drawable/coding"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:layout_width="46dp"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_x="42dp"
+        android:layout_y="174dp" />
+
+    <View
+        android:layout_width="46dp"
+        android:layout_height="1dp"
+        android:layout_x="120dp"
+        android:background="#000"
+        android:layout_y="172dp" />
+
+    <ImageView
+        android:id="@+id/router1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="88dp"
+        android:layout_y="155dp"
+        app:srcCompat="@drawable/router"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/router3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="168dp"
+        android:layout_y="155dp"
+        app:srcCompat="@drawable/router"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+
+        <Button
+            android:id="@+id/n11"
+            android:layout_width="52dp"
+            android:layout_height="35dp"
+            android:layout_x="23dp"
+            android:layout_y="324dp"
+            android:background="@color/colorAccent"
+            android:text="N1" />
+
+        <Button
+            android:id="@+id/n21"
+            android:layout_width="52dp"
+            android:layout_height="35dp"
+            android:layout_x="86dp"
+            android:layout_y="324dp"
+            android:background="@color/colorAccent"
+            android:text="N2" />
+
+        <Button
+            android:id="@+id/n41"
+            android:layout_width="52dp"
+            android:layout_height="35dp"
+            android:layout_x="86dp"
+            android:layout_y="372dp"
+            android:background="@color/colorAccent"
+            android:text="N4" />
+
+        <Button
+            android:id="@+id/n31"
+            android:layout_width="52dp"
+            android:layout_height="35dp"
+            android:layout_x="23dp"
+            android:layout_y="372dp"
+            android:background="@color/colorAccent"
+            android:text="N3" />
+    <Button
+        android:id="@+id/n12"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_x="223dp"
+        android:layout_y="324dp"
+        android:background="@color/colorPrimary"
+        android:text="N1" />
+
+    <Button
+        android:id="@+id/n22"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_x="286dp"
+        android:layout_y="324dp"
+        android:background="@color/colorPrimary"
+        android:text="N2" />
+
+    <Button
+        android:id="@+id/n42"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_x="286dp"
+        android:layout_y="372dp"
+        android:background="@color/colorPrimary"
+        android:text="N4" />
+
+    <Button
+        android:id="@+id/n32"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_x="223dp"
+        android:layout_y="372dp"
+        android:background="@color/colorPrimary"
+        android:text="N3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="214dp"
+        android:layout_y="88dp"
+        android:text="N1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="224dp"
+        android:layout_y="228dp"
+        android:text="N2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="35dp"
+        android:layout_y="198dp"
+        android:text="N3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="329dp"
+        android:layout_y="196dp"
+        android:text="N4" />
+
+    <View
+        android:layout_width="54dp"
+        android:layout_height="1dp"
+        android:layout_x="200dp"
+        android:layout_y="172dp"
+        android:background="#000"/>
+    <View
+        android:layout_width="40dp"
+        android:layout_height="1dp"
+        android:layout_x="285dp"
+        android:layout_y="172dp"
+        android:background="#000"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="45dp"
+        android:layout_x="182dp"
+        android:layout_y="115dp"
+        android:background="#000"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="35dp"
+        android:layout_x="182dp"
+        android:layout_y="185dp"
+        android:background="#000"/>
+
+
+
+
+</AbsoluteLayout>
