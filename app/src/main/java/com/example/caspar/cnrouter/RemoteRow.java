@@ -2,10 +2,12 @@ package com.example.caspar.cnrouter;
 
 /**
  * Created by Caspar on 28.11.2017.
+ *
+ * it's a class for remotely connectections table
  */
 
 public class RemoteRow {
-    private String networkAddress;
+    private String networkAddress; // It's more like id
     private String nextHop;
     private int distance;
 

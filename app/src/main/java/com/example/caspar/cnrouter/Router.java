@@ -9,9 +9,9 @@ import java.util.ArrayList;
  */
 
 public class Router {
-    private String IPaddress;
-    private ArrayList<LocalRow> RTable = new ArrayList<LocalRow>();
-    private ArrayList<RemoteRow> RRTable = new ArrayList<RemoteRow>();
+    private String IPaddress; //It's like ID
+    private ArrayList<LocalRow> RTable = new ArrayList<LocalRow>(); // Table for direcly connected networks
+    private ArrayList<RemoteRow> RRTable = new ArrayList<RemoteRow>(); // Table for remotely connected networks
 
     public Router(String IPaddress) {
         this.IPaddress = IPaddress;

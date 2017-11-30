@@ -44,11 +44,14 @@ public class MainActivity extends AppCompatActivity {
         r1 = new Router("171.128.0.0/26"); //26
         r2 = new Router("171.128.0.94/28"); //28
         r3 = new Router("171.128.0.109/28"); //28
+        //Directly connected
         r1.addStaticRow("171.128.0.0/26");
         r1.addStaticRow("171.128.0.63/26");
         r2.addStaticRow("171.128.0.94/28");
         r3.addStaticRow("171.128.0.109/28");
-        //r1.addDynRow("171.128.0.94/28", "171.128.0.94/28", 54);
+
+
+        // remote nnetworks
         r1.addDynRow("171.128.0.94/28", "171.128.0.94/28", 12);
         r1.addDynRow("171.128.0.109/28", "171.128.0.109/28", 22);
         r2.addDynRow("171.128.0.0/26", "171.128.0.0/26", 32);
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         r3.addDynRow("171.128.0.63/26", "171.128.0.0/26", 12);
         r3.addDynRow("171.128.0.94/28", "171.128.0.0/26", 12);
 
-
+        //Initialisation for visualisation
         router1 = (ImageView) findViewById(R.id.prouter1);
         router2 = (ImageView) findViewById(R.id.prouter2);
         router3 = (ImageView) findViewById(R.id.prouter3);
@@ -149,9 +152,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+    /**
+     * Method for finding directly connected networks
+     */
     public void findDirCon(final int ch1,final int ch2){
+
         if(ch1==ch2){
+            //the same network
             tv1.setText(tv1.getText()+"\n"+"Inside one network the message is successfully delivered." );
+            //For animation
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -174,11 +183,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             }, 1900);
         }else {
+            //2 network to 1 router
             ArrayList<LocalRow> directlyConTable = convertPosToIP(ch1).getRTable();
             for (int i = 0; i < directlyConTable.size(); i++) {
                 if (convertPosToIP(ch2).getIPaddress() == directlyConTable.get(i).getNetworkAddress()) {
                     // t=true;
                     tv1.setText(tv1.getText()+"\n"+"Network " + ch1 + " is directly connected  to Network " + ch2 + ". The message is successfully delivered.");
+                    //animation
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
@@ -211,11 +222,16 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+    /**
+     * method for finding remote networks
+     */
     public void findRemCon(final int ch1,final int ch2){
+
         ArrayList<RemoteRow> remoteConTable = convertPosToIP(ch1).getRRTable();
         for (int i = 0; i < remoteConTable.size(); i++) {
             if (convertPosToIP(ch2).getIPaddress() == remoteConTable.get(i).getNetworkAddress()) {
                 tv1.setText(tv1.getText() + "There's a path: Next hop: " + convertIPtoRouter(remoteConTable.get(i).getNextHop()) + " Metrics: " + remoteConTable.get(i).getDistance() + "\n");
+                //animation
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -242,11 +258,14 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
+    /**
+     * methos to fins the path between to networks
+     * */
     public void findThePath(final int ch1,final int ch2)
     {
         //boolean t = false;
         tv1.setText("");
+        //checks for direct connection
         findDirCon(ch1,ch2);
 
             ArrayList<RemoteRow> remoteConTable = convertPosToIP(ch1).getRRTable();
@@ -293,7 +312,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+// conversation to approprite format
     public Router convertPosToIP(int ch){
         if(ch==1||ch==2){
             return r1;
@@ -332,6 +351,9 @@ public class MainActivity extends AppCompatActivity {
         }
         return "r3";
     }
+    /**
+     * methods for animation
+     * */
     public ImageView getImageView(int ch){
         if(ch==1){
             return N1C1;

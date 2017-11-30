@@ -2,6 +2,8 @@ package com.example.caspar.cnrouter;
 
 /**
  * Created by Caspar on 28.11.2017.
+ *
+ * It's a class for directly-connected connections table
  */
 
 public class LocalRow {
