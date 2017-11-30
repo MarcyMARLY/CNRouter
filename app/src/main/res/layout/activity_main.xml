@@ -34,12 +34,34 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
-        android:id="@+id/router2"
+        android:id="@+id/pN1C1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="168dp"
+        android:layout_y="86dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/refresh_button"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/router3"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_x="254dp"
         android:layout_y="155dp"
         app:srcCompat="@drawable/router"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/prouter3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="254dp"
+        android:layout_y="155dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/refresh_button"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -50,6 +72,17 @@
         android:layout_x="171dp"
         android:layout_y="220dp"
         app:srcCompat="@drawable/coding"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/pN1C2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="171dp"
+        android:layout_y="220dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/refresh_button"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -66,6 +99,19 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
+        android:id="@+id/pN2C1"
+        android:layout_width="41dp"
+        android:layout_height="30dp"
+        android:layout_x="5dp"
+
+
+        android:layout_y="155dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/refresh_button"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
         android:id="@+id/N3C1"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -75,22 +121,53 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <View
-        android:layout_width="46dp"
-        android:layout_height="1dp"
-        android:background="#000"
-        android:layout_x="42dp"
-        android:layout_y="174dp" />
+    <ImageView
+        android:id="@+id/pN3C1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="327dp"
+        android:layout_y="155dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/refresh_button"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <View
+        android:id="@+id/v1"
+        android:layout_width="46dp"
+        android:layout_height="1dp"
+        android:layout_x="42dp"
+        android:layout_y="174dp"
+        android:background="#000" />
+
+    <View
+        android:id="@+id/v2"
         android:layout_width="46dp"
         android:layout_height="1dp"
         android:layout_x="120dp"
-        android:background="#000"
-        android:layout_y="172dp" />
+        android:layout_y="172dp"
+        android:background="#000" />
+
+    <View
+        android:id="@+id/v12"
+        android:layout_width="46dp"
+        android:layout_height="1dp"
+        android:layout_x="42dp"
+        android:layout_y="174dp"
+        android:background="@color/colorGranat"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/v11"
+        android:layout_width="46dp"
+        android:layout_height="1dp"
+        android:layout_x="120dp"
+        android:layout_y="172dp"
+        android:background="@color/colorGranat"
+        android:visibility="gone" />
 
     <ImageView
-        android:id="@+id/router1"
+        android:id="@+id/router2"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_x="88dp"
@@ -100,12 +177,34 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
-        android:id="@+id/router3"
+        android:id="@+id/prouter2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="88dp"
+        android:layout_y="155dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/refresh_button"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/router1"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_x="168dp"
         android:layout_y="155dp"
         app:srcCompat="@drawable/router"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/prouter1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_x="168dp"
+        android:layout_y="155dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/refresh_button"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -215,29 +314,72 @@
         android:text="N4" />
 
     <View
+        android:id="@+id/v3"
         android:layout_width="54dp"
         android:layout_height="1dp"
         android:layout_x="200dp"
         android:layout_y="172dp"
-        android:background="#000"/>
+        android:background="#000" />
+
     <View
+        android:id="@+id/v10"
+        android:layout_width="54dp"
+        android:layout_height="1dp"
+        android:layout_x="200dp"
+        android:layout_y="172dp"
+        android:background="@color/colorGranat"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/v4"
         android:layout_width="40dp"
         android:layout_height="1dp"
         android:layout_x="285dp"
         android:layout_y="172dp"
-        android:background="#000"/>
+        android:background="#000" />
+
     <View
+        android:id="@+id/v9"
+        android:layout_width="40dp"
+        android:layout_height="1dp"
+        android:layout_x="285dp"
+        android:layout_y="172dp"
+        android:background="@color/colorGranat"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/v5"
         android:layout_width="1dp"
         android:layout_height="45dp"
         android:layout_x="182dp"
         android:layout_y="115dp"
-        android:background="#000"/>
+        android:background="#000" />
+
     <View
+        android:id="@+id/v8"
+        android:layout_width="1dp"
+        android:layout_height="45dp"
+        android:layout_x="182dp"
+        android:layout_y="115dp"
+        android:background="@color/colorGranat"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/v6"
         android:layout_width="1dp"
         android:layout_height="35dp"
         android:layout_x="182dp"
         android:layout_y="185dp"
-        android:background="#000"/>
+        android:background="#000" />
+
+    <View
+        android:id="@+id/v7"
+        android:layout_width="1dp"
+        android:layout_height="35dp"
+        android:layout_x="182dp"
+        android:layout_y="185dp"
+        android:background="@color/colorGranat"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/textView5"
@@ -262,6 +404,22 @@
         android:layout_x="266dp"
         android:layout_y="187dp"
         android:text="r3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="290dp"
+        android:text="Click on Source Network" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="193dp"
+        android:layout_y="290dp"
+        android:text="Click on Destination Network" />
 
 
 </AbsoluteLayout>
